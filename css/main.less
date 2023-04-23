@@ -1,0 +1,133 @@
+/*COLORES PRINCIPALES*/
+@paleBlue: hsl(225, 100%, 94%);
+@brightBlue: hsl(245, 75%, 52%);
+
+/*COLORES SECUNDARIO*/
+@veryPaleBlue: hsl(225, 100%, 98%);
+@desaturatedBlue: hsl(245, 75%, 52%);
+@darkBlue: hsl(223, 47%, 23%);
+
+/*ESTILOS GENERALES*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+    background-color: @paleBlue;
+}
+
+/*ESTILOS*/
+main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+
+}
+
+.main-container {
+    width: 85%;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: @veryPaleBlue;
+
+    &__img{
+        img {
+            width: 100%;
+            border-radius: 20px 20px 0 0;
+        }
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 24px;
+        text-align: center;
+        
+
+        h1 {
+            color: @darkBlue;
+            font-weight: bold;
+        }
+
+        p{
+            font-size: 1.1rem;
+            line-height: 1.5rem;
+            color: @darkBlue;
+            margin-top: 24px;
+        }
+    }
+
+    &__plan {
+        display: flex;
+        justify-content: center;
+        font-size: 1.1rem;
+        margin-top: 32px;
+
+        picture {
+            margin-right: 24px;
+            display: flex;
+            img {
+                align-self: center;
+                width: 50px;
+            }
+        }
+
+        div {
+            align-self: center;
+
+            .distintivo {
+                margin-bottom: 4px;
+                color: @darkBlue;
+                font-weight: bold;
+            }
+            p {
+                color: @darkBlue;
+            }
+        }
+
+        a {
+            margin-left: 24px;
+            font-weight: bold;
+            color: @brightBlue;
+            align-self: center;
+            padding-bottom: 8px;
+        }
+       
+    }
+
+    &__button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 32px;
+        
+        button {
+            width: 275px;
+            height: 44px;
+            border: none;
+            border-radius: 12px;
+            background-color: @brightBlue;
+            color: white;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        a{
+            text-decoration: none;
+            color: @darkBlue;
+            font-weight: bold;
+            margin-top: 24px;
+            margin-bottom: 48px;
+        }
+    }
+
+
+
+
+}
+
